@@ -19,6 +19,7 @@
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* Added for image centering */
         }
 
         h1 {
@@ -35,11 +36,20 @@
         .label {
             font-weight: bold;
         }
+
+        .profile-image { /* New style for the image */
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border-radius: 50%; /* Makes it round */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>ข้อมูลนักศึกษา</h1>
+        <img src="YOUR_IMAGE_URL_HERE" alt="รูปโปรไฟล์นักศึกษา" class="profile-image">
         <div class="info">
             <p><span class="label">ชื่อ:</span> นาย ภคพล วีระประทีป</p>
             <p><span class="label">รหัสนักศึกษา:</span> 6740259111</p>
